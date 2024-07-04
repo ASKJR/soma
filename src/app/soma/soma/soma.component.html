@@ -1,0 +1,10 @@
+<form>
+  N1:<input #n1 type="text" /><br /><br />
+  N2:<input #n2 type="text" /><br /><br />
+  <input
+    type="button"
+    value="Somar"
+    (click)="onClickSomar(n1.value, n2.value)"
+  /><br /><br />
+  R:<input type="text" [value]="resultado" /><br />
+</form>
